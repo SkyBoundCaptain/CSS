@@ -1,0 +1,182 @@
+/*
+ * Add your CSS styles to this file.
+ */
+
+
+/**********************Broad Brush Style choices********************/
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    font-style: none;
+}
+/*******************************************************************/
+/************************Nav-bar and Menu***************************/
+.site-title {
+    background-color: rgb(77, 160, 255);
+    font-size: 35px;
+    font-weight: lighter;
+    color: white;
+
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.navbar {
+    background-color: white;
+    padding-top: 5px;
+}
+
+.navlist {
+    background-color: white;
+    height: 15%;
+    padding: 5px;
+    padding-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 2.5%;
+}
+
+/*List descendents of navlist*/
+.navlist li {
+    display: inline;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+}
+
+/*Link descendents of list item*/
+li a {
+    color: black;
+}
+
+/*Link descendents of list item, when hovered over*/
+li a:hover{
+    color: rgb(43, 148, 209);
+}
+
+.navitem.active {
+    text-decoration: underline rgb(77, 160, 255) 3px;
+}
+/**************************************************************/
+/************************Search Bar***************************/
+
+.navbar-search {
+    position: absolute;
+    right: 1.25%;
+    top: 6%;
+}
+
+#navbar-search-input {
+    background-color: rgb(223, 223, 223);
+}
+
+#navbar-search-input:focus {
+    background-color: white;
+}
+
+#navbar-search-button{
+    padding-left: 1px ;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+#navbar-search-button:hover {
+    color:rgb(0, 162, 255);
+}
+
+/**************************************************************/
+/************************Twit button***************************/
+#create-twit-button {
+    position: fixed;
+        bottom: 2%;
+        right: 2%;
+    color: white;
+    font-size: 25px;
+
+    background-color: red;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 0px;
+    border-radius: 100%;
+
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+#create-twit-button:hover {
+    position: fixed;
+        bottom: 1.8%;
+        right: 1.8%;
+    color: white;
+    font-size: 30px;
+
+    background-color: rgb(77, 160, 255);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 0px;
+    border-radius: 100%;
+
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+/*******************************************************************/
+/******************************Twits********************************/
+.twit-container {
+    padding-left: 7%;
+    padding-right: 13%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.twit {
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    min-width: 400px;
+    max-width: 400px;
+    margin: 3px;
+}
+
+.twit-icon {
+    margin: 0px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.twit-text {
+    margin-top: 0px;
+    margin-bottom: 5px;
+
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 15px;
+}
+
+.twit-author {
+    font-weight: bolder;
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.twit-author a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+}
+
+.twit-author a:hover {
+    color:rgb(77, 160, 255);
+}
